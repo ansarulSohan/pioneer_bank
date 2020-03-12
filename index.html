@@ -1,21 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="./resources/css/style.css">
-    <title>Pioneer Bank - Home</title>
-</head>
-<body>
-    <div class="container">
-        <div class="align-items-center">
-            <h1 class="text-center">Welcome to Pioneer Bank</h1>
-        </div>
-    </div>
 
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+		integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+	<link rel="stylesheet"
+		href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/5.0.1/collection/components/icon/icon.min.css" />
+	<link rel="stylesheet" href="./resources/css/style.css" />
+	<title>Pioneer Bank - Home</title>
+	<link rel="icon" href="https://media.geeksforgeeks.org/wp-content/cdn-uploads/gfg_200X200.png" type="image/x-icon" />
+</head>
+
+<body>
+	<!-- code -->
+	<div class="container" id="login-area">
+		<div class="pad">
+			<h1 class="text-center">Welcome to Pioneer Bank</h1>
+		</div>
+
+		<div class="submit-area">
+			<div class="container">
+				<h4>Login</h4>
+				<input type="text" name="" id="" placeholder="Email" class="form-control" />
+				<br />
+				<input type="password" name="" id="" placeholder="Password" class="form-control" />
+				<br />
+				<button class="btn btn-success" id="btn-login">
+					Submit
+				</button>
+			</div>
+		</div>
+	</div>
+
+	<div class="container" id="transaction-area">
+		<div class="pad">
+			<h1 class="text-center">Transactions</h1>
+		</div>
+		<div class="transactions">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4">
+						<div class="bg-success deposit">
+							<h5>Deposit</h5>
+							<h2 id="depositAmount">&dollar;00</h2>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="bg-danger withdraw">
+							<h5>Withdraw</h5>
+							<h2 id="withdrawAmount">&dollar;00</h2>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="bg-primary balance">
+							<h5>Balance</h5>
+							<h2 id="balance">&dollar;00</h2>
+						</div>
+					</div>
+				</div>
+
+				<div class="pad">
+					<div class="row">
+						<div class="col-md-6">
+							<div class="submit-area">
+								<h3>Deposit</h3>
+								<input type="number" name="" id="inputDeposit" min="1" class="form-control"
+									placeholder="Deposit Amount">
+								<br>
+								<button type="submit" id="depositButton" class="btn btn-success" onclick="">Deposit</button>
+								<br>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="submit-area">
+								<h3>Withdraw</h3>
+								<input type="number" name="" id="inputWithdraw" min="1" class="form-control"
+									placeholder="Amount you want to withdraw">
+								<br>
+								<button type="submit" id="withdrawButton" class="btn btn-success" onclick="">Withdraw</button>
+								<br>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- ******CODE******* -->
+
+	<!-- JS Scripts -->
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+		integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+		integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+		integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+		crossorigin="anonymous"></script>
+
+	<script src="./resources/js/index.js"></script>
 </body>
+
 </html>
