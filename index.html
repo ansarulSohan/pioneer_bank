@@ -39,7 +39,53 @@
 			<h1 class="text-center">Transactions</h1>
 		</div>
 		<div class="transactions">
-			<div class="container"></div>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4">
+						<div class="bg-success deposit">
+							<h5>Deposit</h5>
+							<h2 id="depositAmount">&dollar;00</h2>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="bg-danger withdraw">
+							<h5>Withdraw</h5>
+							<h2 id="withdrawAmount">&dollar;00</h2>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="bg-primary balance">
+							<h5>Balance</h5>
+							<h2 id="balance">&dollar;00</h2>
+						</div>
+					</div>
+				</div>
+
+				<div class="pad">
+					<div class="row">
+						<div class="col-md-6">
+							<div class="submit-area">
+								<h3>Deposit</h3>
+								<input type="number" name="" id="inputDeposit" min="1" class="form-control"
+									placeholder="Deposit Amount">
+								<br>
+								<button type="submit" id="depositButton" class="btn btn-success" onclick="">Deposit</button>
+								<br>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="submit-area">
+								<h3>Withdraw</h3>
+								<input type="number" name="" id="inputWithdraw" min="1" class="form-control"
+									placeholder="Amount you want to withdraw">
+								<br>
+								<button type="submit" id="withdrawButton" class="btn btn-success" onclick="">Withdraw</button>
+								<br>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 

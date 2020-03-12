@@ -1,10 +1,26 @@
 .pad {
-    margin: 100px auto;
+  margin: 100px auto;
 }
 
 .submit-area {
-    margin-top: 50px;
-    border-radius: 10px;
-    padding: 40px;
-    box-shadow: 10px 10px 20px gray;
-} 
+  margin-top: 50px;
+  border-radius: 10px;
+  padding: 40px;
+  box-shadow: 10px 10px 10px gray;
+}
+
+.deposit,
+.withdraw,
+.balance {
+  color: white;
+  padding-top: 10px;
+  height: 100px;
+  margin: 0 auto;
+  padding-left: 10px;
+  border-radius: 10px;
+}
+.deposit h2,
+.withdraw h2,
+.balance h2 {
+  font-size: 250%;
+}
